@@ -1,20 +1,21 @@
 public class Illuminati {
 	
-	public int triangleNumber(int seed) {
+	public long triangleNumber(long seed) {
 		
 		if (seed < 1) {
 			throw new IllegalArgumentException("Error: The starting integer must be at least 1!");
-			System.exit(1);
+			System.exit(3);
 		}
 		
-		for (int i = seed - 1; i > 0; i--) {
-			seed += i;
-		}
-		
-		return seed;
+		return (seed * (seed + 1)) / 2;
 	}
 	
-	public int lazyCaterer(int cuts) {
+	public long lazyCaterer(long cuts) {
+		
+		if (cuts < 0) {
+			throw new IllegalArgumentException("Error: The starting integer must be at least 0!");
+			System.exit(3);
+		}
 		
 		return (Math.pow(cuts, 2) + cuts + 2) / 2;
 	}
