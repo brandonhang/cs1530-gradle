@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'IntegerFun.java'
+
+task demo << {
+	println "Integer Sequence Demo"
+	println "Tri(1) = 1"
+	println "Tri(2) = 3"
+	println "Tri(3) = 6"
+	println "Tri(4) = 10"
+	println "Tri(5) = 15"
+	println "Lazy(1) = 2"
+	println "Lazy(2) = 4"
+	println "Lazy(3) = 7"
+	println "Lazy(4) = 11"
+	println "Lazy(5) = 16"
+}
