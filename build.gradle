@@ -39,7 +39,12 @@ dependencies {
 
 run {
 	systemProperties System.getProperties()
-	args System.getProperty("args").split()
+	try {
+		args System.getProperty("args").split()
+	}
+	catch(NullPointerException npe) {
+		// Livin' on the edge!
+	}
 }
 
 task demo << {

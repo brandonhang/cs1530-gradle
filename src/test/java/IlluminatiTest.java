@@ -22,7 +22,7 @@ public class IlluminatiTest {
 	@Test
 	public void testTriangleMax() {
 		
-		assertEquals(Illuminati.triangleNumber(2147483647), 2305843008139952128);
+		assertEquals(Illuminati.triangleNumber(2147483647), 2305843008139952128L);
 	}
 	
 	@Test
@@ -54,7 +54,7 @@ public class IlluminatiTest {
 	@Test
 	public void testLazyMax() {
 		
-		assertEquals(Illuminati.lazyCaterer(2147483647), 2305843008139952129);
+		assertEquals(Illuminati.lazyCaterer(2147483647), 2305843008139952129L);
 	}
 	
 	@Test
